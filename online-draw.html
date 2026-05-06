@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>線上求籤｜焚香願所</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- 底圖 -->
+  <img src="網路求籤.jpg" alt="線上求籤底圖" class="bg">
+
+  <!-- 疊在底圖上的互動區 -->
+  <div class="interactive">
+
+    <!-- LOGO：跟活動 / 交通一樣 -->
+    <a href="index.html" class="logo-wrap">
+      <img src="logo.png" alt="焚香願所">
+    </a>
+
+    <!-- 上方選單：跟活動 / 交通一樣 -->
+    <div class="menu-wrap">
+      <img src="選單.png" alt="主選單" class="menu-img">
+
+      <a href="index.html"       class="menu-link menu-home"></a>
+      <a href="traffic.html"     class="menu-link menu-traffic"></a>
+      <a href="online-draw.html" class="menu-link menu-online"></a>
+      <a href="message.html"     class="menu-link menu-message"></a>
+      <a href="activity.html"    class="menu-link menu-activity"></a>
+    </div>
+
+    <!-- 筊（擲筊） -->
+    <div id="jia-box" class="jia-wrapper">
+      <img src="筊.png" id="jia" class="jia-img" alt="擲筊">
+    </div>
+
+    <!-- 擲筊結果字（在筊右邊） -->
+    <div id="result" class="result-text"></div>
+
+    <!-- 20 個籤按鈕（先鎖起來，要聖筊才可點） -->
+    <div class="lottery-buttons">
+      <button disabled class="disabled" onclick="showPoem(1)">零壹籤</button>
+      <button disabled class="disabled" onclick="showPoem(2)">零貳籤</button>
+      <button disabled class="disabled" onclick="showPoem(3)">零參籤</button>
+      <button disabled class="disabled" onclick="showPoem(4)">零肆籤</button>
+      <button disabled class="disabled" onclick="showPoem(5)">零伍籤</button>
+      <button disabled class="disabled" onclick="showPoem(6)">零陸籤</button>
+      <button disabled class="disabled" onclick="showPoem(7)">零柒籤</button>
+      <button disabled class="disabled" onclick="showPoem(8)">零捌籤</button>
+      <button disabled class="disabled" onclick="showPoem(9)">零玖籤</button>
+      <button disabled class="disabled" onclick="showPoem(10)">壹零籤</button>
+
+      <button disabled class="disabled" onclick="showPoem(11)">拾壹籤</button>
+      <button disabled class="disabled" onclick="showPoem(12)">拾貳籤</button>
+      <button disabled class="disabled" onclick="showPoem(13)">拾參籤</button>
+      <button disabled class="disabled" onclick="showPoem(14)">拾肆籤</button>
+      <button disabled class="disabled" onclick="showPoem(15)">拾伍籤</button>
+      <button disabled class="disabled" onclick="showPoem(16)">拾陸籤</button>
+      <button disabled class="disabled" onclick="showPoem(17)">拾柒籤</button>
+      <button disabled class="disabled" onclick="showPoem(18)">拾捌籤</button>
+      <button disabled class="disabled" onclick="showPoem(19)">拾玖籤</button>
+      <button disabled class="disabled" onclick="showPoem(20)">貳拾籤</button>
+    </div>
+
+    <!-- 籤詩顯示（右下角） -->
+    <div id="poem-box" class="poem-box"></div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

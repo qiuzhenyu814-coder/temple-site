@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>炷香願所｜首頁</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body { width: 100%; min-height: 100%; }
+
+    body {
+      font-family: "Noto Serif TC","Microsoft JhengHei",system-ui,sans-serif;
+      background: #f1ece2;
+    }
+
+    .wrapper { width: 100vw; max-width: 100vw; margin: 0 auto; }
+
+    .poster { position: relative; width: 100%; }
+
+    .poster-bg { width: 100%; display: block; height: auto; }
+
+    img { display: block; max-width: 100%; height: auto; }
+
+    .fade-in { opacity: 0; animation: fadeInUp 1s ease-out forwards; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .overlay { position: absolute; z-index: 5; pointer-events: auto; }
+
+
+    /* LOGO */
+    .logo {
+      left: -3%;
+      top: 1%;
+      width: 37%;
+      z-index: 10;
+    }
+
+
+    /* 陰影 */
+    .roof-shadow {
+      top: 9%;
+      right: 2%;
+      width: 58%;
+      z-index: 4;
+    }
+
+    /* 屋簷 */
+    .roof {
+      top: 10%;
+      right: 0%;
+      width: 55%;
+      z-index: 6;
+      filter: drop-shadow(0 18px 28px rgba(0,0,0,0.45));
+    }
+
+
+    /* ===== 四個選項（最新 width: 10%） ===== */
+    .option {
+      position: absolute;
+      display: block;
+      width: 10%;
+      max-width: none;
+      cursor: pointer;
+      z-index: 8;
+      transform: translate(-50%, -50%);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .option:hover {
+      transform: translate(-50%, -52%) scale(1.03);
+      box-shadow: 0 10px 18px rgba(0,0,0,0.35);
+    }
+
+    /* 交通位置（→ 往右 2%） */
+    .option-traffic {
+      left: 21%;     /* ★ 原 19 → 21 */
+      top: 49%;
+    }
+
+    /* 線上留言（→ 往右 2%） */
+    .option-message {
+      left: 53.5%;   /* ★ 原 51.5 → 53.5 */
+      top: 49%;
+    }
+
+    /* 網路求籤（不動） */
+    .option-online {
+      left: 35%;
+      top: 68%;
+    }
+
+    /* 活動資訊（不動） */
+    .option-activity {
+      left: 68%;
+      top: 68%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="poster">
+
+      <img src="底圖.jpg" class="poster-bg">
+
+      <div class="overlay logo fade-in">
+        <img src="logo.png">
+      </div>
+
+      <div class="overlay roof-shadow fade-in">
+        <img src="陰影.png">
+      </div>
+
+      <div class="overlay roof.fade-in">
+        <img src="屋簷.png">
+      </div>
+
+      <a href="traffic.html" class="overlay option option-traffic fade-in">
+        <img src="option-traffic.png">
+      </a>
+
+      <a href="message.html" class="overlay option option-message fade-in">
+        <img src="option-message.png">
+      </a>
+
+      <a href="online-draw.html" class="overlay option option-online fade-in">
+        <img src="option-online.png">
+      </a>
+
+      <a href="activity.html" class="overlay option option-activity fade-in">
+        <img src="option-activity.png">
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>

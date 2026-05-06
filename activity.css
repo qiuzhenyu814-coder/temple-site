@@ -1,0 +1,77 @@
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #f1ece2;
+  font-family: "Noto Serif TC","Microsoft JhengHei",system-ui,sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* 版心寬度（與交通頁一致） */
+.wrapper {
+  width: 100%;
+  max-width: 1992px;
+  margin: 0 auto;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+}
+
+/* ⭐ 底圖 */
+.bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ⭐ LOGO（你之前要求的往上2、往左1） */
+.logo-wrap {
+  position: absolute;
+  top: 1%;
+  left: -5%;
+  width: 22%;
+  z-index: 10;
+}
+
+.logo-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ⭐ 選單（往上2 ＝ top:10%，往左1 ＝ left:49%） */
+.menu-wrap {
+  position: absolute;
+  top: 10%;
+  left: 49%;     /* ⭐ 最新：往左 1% */
+  width: 60%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.menu-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 透明點擊區（與交通頁一模一樣） */
+.menu-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.menu-home     { left: -0.2%;  width: 8.45%; }
+.menu-traffic  { left: 15.65%; width: 16.36%; }
+.menu-online   { left: 38.75%; width: 12.84%; }
+.menu-message  { left: 50.51%; width: 24.22%; }
+.menu-activity { left: 83.86%; width: 17.09%; }
